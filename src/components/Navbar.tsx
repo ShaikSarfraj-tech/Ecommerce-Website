@@ -1,6 +1,6 @@
 import React from 'react'
 import { SearchBar } from './SearchBar'
-import { Heart, ShoppingCart, User } from 'iconsax-react'
+import { Heart, ShoppingCart } from 'iconsax-react'
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 
 const Navbar = () => {
