@@ -1,10 +1,13 @@
 import React from 'react'
+import { SearchBar } from './SearchBar'
+import { Heart, ShoppingCart, User } from 'iconsax-react'
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 
 const Navbar = () => {
     return (
-        <div className='w-full px-16 h-[10%] flex items-center'>
-            <ul className='flex flex-row justify-between w-full'>
-                <li>Logo</li>
+        <div className='w-full px-16 h-[10%] flex items-center '>
+            <ul className='flex flex-row justify-between items-center w-full '>
+                <li className=' text-2xl font-bold italic'>Fashions</li>
                 <div className='flex flex-row space-x-6'>
                     <li>Shop</li>
                     <li>Men</li>
@@ -12,11 +15,21 @@ const Navbar = () => {
                     <li>Combos</li>
                     <li>Joggers</li>
                 </div>
-                <li>Search Bar</li>
+                <li>
+                    <SearchBar />
+                </li>
                 <div className='flex flex-row space-x-2'>
-                    <li>Wishlist</li>
-                    <li>Account</li>
-                    <li>Cart</li>
+                    <li className='bg-gray-100 flex items-center justify-center p-2 rounded-lg'><Heart size="22" /></li>
+                    <li className='bg-gray-100 flex items-center justify-center p-2 rounded-lg'>
+                        {/* <User size="22" /> */}
+                        <SignedOut>
+                            <SignInButton />
+                        </SignedOut>
+                        <SignedIn>
+                            <UserButton />
+                        </SignedIn>
+                    </li>
+                    <li className='bg-gray-100 flex items-center justify-center p-2 rounded-lg'><ShoppingCart size="22" /></li>
                 </div>
             </ul>
         </div>
