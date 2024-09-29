@@ -5,7 +5,7 @@ import { ArrowRight } from 'iconsax-react';
 import { useRouter } from 'next/navigation'
 
 
-const CategoryCard = ({ categoryType, categoryImg }: { categoryType: any, categoryImg: any }) => {
+const CategoryCard = ({ categoryType, categoryImg }: { categoryType: String, categoryImg: any }) => {
     const router = useRouter()
 
     return (
