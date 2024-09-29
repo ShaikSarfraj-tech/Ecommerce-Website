@@ -1,11 +1,11 @@
 "use client"
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import { ArrowRight } from 'iconsax-react';
 import { useRouter } from 'next/navigation'
 
 
-const CategoryCard = ({ categoryType, categoryImg }: { categoryType: String, categoryImg: any }) => {
+const CategoryCard = ({ categoryType, categoryImg }: { categoryType: String, categoryImg: string | StaticImageData }) => {
     const router = useRouter()
 
     return (

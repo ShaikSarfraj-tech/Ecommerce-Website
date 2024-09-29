@@ -12,7 +12,7 @@ const Footer = () => {
                             <li><a href="#" className="hover:text-white">Contact Us</a></li>
                             <li><a href="#" className="hover:text-white">Track Order</a></li>
                             <li><a href="#" className="hover:text-white">Returns & Refunds</a></li>
-                            <li><a href="#" className="hover:text-white">FAQ's</a></li>
+                            <li><a href="#" className="hover:text-white">FAQs</a></li>
                         </ul>
                     </div>
                     <div className="mb-6 md:mb-0">
